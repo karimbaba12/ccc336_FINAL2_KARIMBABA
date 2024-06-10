@@ -14,4 +14,10 @@
     <ProjectReference Include="..\FINAL_DAL\FINAL_DAL.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Mapping\" />
+    <Folder Include="Wrapping\" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+
 </Project>
