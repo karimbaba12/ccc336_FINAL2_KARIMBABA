@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace FINAL_DAL.Repositories.PilotRepository
 {
-    internal class PilotRepository : GenericRepository<Pilot>, IPilotRepository
+    public class PilotRepository : GenericRepository<Pilot>, IPilotRepository
     {
         public PilotRepository(AirplaneSystemContext AirplaneSystemContext) : base(AirplaneSystemContext)
         {
