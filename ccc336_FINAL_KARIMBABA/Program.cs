@@ -1,5 +1,6 @@
 using ccc336_FINAL_KARIMBABA.Extensions;
 using Microsoft.Extensions.DependencyInjection.Extensions;
+using ccc336_FINAL_KARIMBABA.Extenstions;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,7 +12,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddRepositories();
 builder.Services.AddServices();
-
+builder.Services.GlobalExceptions();
 builder.Services.addDb(builder.Configuration);
 var app = builder.Build();
 

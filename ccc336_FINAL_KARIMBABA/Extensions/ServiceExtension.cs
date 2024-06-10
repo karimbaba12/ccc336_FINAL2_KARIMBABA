@@ -2,6 +2,7 @@
 using FINAL_BLL.Services.Flights;
 using FINAL_BLL.Services.Passengers;
 using FINAL_BLL.Services.Pilots;
+using FINAL_BLL.Services.ReservationPassengerFlightServices;
 using FINAL_BLL.Services.Reservations;
 namespace ccc336_FINAL_KARIMBABA.Extensions
 {
@@ -15,6 +16,7 @@ namespace ccc336_FINAL_KARIMBABA.Extensions
             services.AddScoped<IPassengerService,PassengerService>();
             services.AddScoped<IReservationService,ReservationService>();
             services.AddScoped<IFlightService,FlightService>();
+            services.AddScoped<IReservationPassengerFlight, ReservationPassengerFlight>();
 
             return services;
         }
