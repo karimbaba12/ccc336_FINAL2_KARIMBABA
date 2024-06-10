@@ -1,0 +1,6 @@
+@ccc336_FINAL_KARIMBABA_HostAddress = http://localhost:5198
+
+GET {{ccc336_FINAL_KARIMBABA_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
