@@ -5,6 +5,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ccc336_FINAL_KARIMBABA.Controllers
 {
+    [Route("api/[Controller]")]
+    [ApiController]
     public class ReservationPassengerFlightController : Controller
     {
        private readonly IReservationPassengerFlight _reservationPassengerFlight;
@@ -14,7 +16,6 @@ namespace ccc336_FINAL_KARIMBABA.Controllers
             _reservationPassengerFlight = reservationPassengerFlight;
         }
         [HttpPost("Add")]
-
         public ApiResponse<ReservationSwitch> AddReservationPassengerFlight(ReservationSwitch reservationSwitch)
         {
             return _reservationPassengerFlight.AddReservationPassengerFlight(reservationSwitch);
